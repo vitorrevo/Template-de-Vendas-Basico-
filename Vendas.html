@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Compras</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #4CAF50; /* Verde da ação */
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Verde mais escuro quando o botão é passado sobre ele */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="product">
+        <h2>Produto 1</h2>
+        <p class="price">Preço: $20.00</p>
+        <button onclick="addCart(1)">Adicionar ao carrinho</button>
+    </div>
+    
+    <div class="product">
+        <h2>Produto 2</h2>
+        <p class="price">Preço: $25.00</p>
+        <button onclick="addCart(2)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="product">
+        <h2>Produto 3</h2>
+        <p class="price">Preço: $30.00</p>
+        <button onclick="addCart(3)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="product">
+        <h2>Produto 4</h2>
+        <p class="price">Preço: $35.00</p>
+        <button onclick="addCart(4)">Adicionar ao carrinho</button>
+    </div>
+</div>
+
+<script>
+function addCart(product) {
+    alert(`Você adicionou o Produto ${product} ao Carrinho`);
+}
+</script>
+
+</body>
+</html>
